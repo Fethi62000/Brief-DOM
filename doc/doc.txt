@@ -1,0 +1,4 @@
+### Carousel ###
+ **_Vous devrez créer une page web contenant un petit carousel basique. La page devra contenir au moins :
+
+* Des divs avec un background color ou des balises img avec de vraies images * 1 bouton suivant *
