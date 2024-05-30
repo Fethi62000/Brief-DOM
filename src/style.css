@@ -17,5 +17,7 @@ button {
     display: wrap;
     margin-left: auto;
     margin-right: auto;
+    width: 5%;
+    height: 5%;
 
 }
