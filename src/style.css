@@ -2,3 +2,20 @@
     height: 100vh;
     width: 50vw;
 }
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+
+}
+
+button {
+
+    display: wrap;
+    margin-left: auto;
+    margin-right: auto;
+
+}
