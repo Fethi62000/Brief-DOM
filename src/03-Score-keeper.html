@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="/src/style3.css">
+        <title>Score Keeper</title>
+        <link rel="stylesheet" type="text/css" href="style3.css">
     </head>
     <body>
-        <div>
-            <p>score</p>
-            <input type="text">
-            <button></button>
-            <button></button>
-            <button></button>
-        </div>
-        <script src="/src/index3.js"></script>
+        <h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+        <p>Playing to: <span id="inputDisplay">5</span></p>
+        <input type="number" name="max" id="max">
+        <button id="p1">Player One</button>
+        <button id='p2'>Player Two</button>
+        <button id="reset">Reset</button>
+        <script src="index3.js"></script>
     </body>
 </html>
