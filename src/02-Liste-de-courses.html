@@ -3,22 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>TODOlist</title>
         <link rel="stylesheet" href="/src/style2.css">
     </head>
     <body>
-        <div>
-            <h2>Listes de courses.</h2>
-            <button></button>
-            <input type="text">
-            <section>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </section>
+        <h1>Listes de courses</h1>
+        <div class="container">
+            <div class="champs">
+                <input type="text" id="taskinput"
+                       placeholder="Ajouter un article">
+                <button onclick="addTask()"><ion-icon
+                              name="add-circle-outline"></ion-icon></button>
+            </div>
+            <ul id="taskList">
+                <li>Pomme</li>
+                <li>Poire</li>
+            </ul>
         </div>
-        <script src="/src/index2.js"></script>
+        <script type="module"
+                src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+                src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="/src/index2.js"> </script>
     </body>
 </html>
