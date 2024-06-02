@@ -17,7 +17,7 @@ function addTask() {
 
     editButton.innerHTML = '<ion-icon name="pencil-outline"></ion-icon>'
 
-    editButtononclick = function () {
+    editButton.onclick = function () {
         editTask(li)
     }
 
@@ -35,21 +35,24 @@ function addTask() {
 
 
     taskList.appendChild(li);
+
     taskInput.value = "";
 
 
 }
-function editTask() {
-    let taskElement = task.firstChild;
+function editTask(task) {
+    let taskTextElement = task.firstChild;
     let taskText = taskTextElement.textContent;
 
-    let newTaskText = prompt("Modifier la tâche", taskText);
+    let newTaskText = prompt("Modifier l'article", taskText);
 
     if (newTaskText === null || newTaskText === "") {
         return;
-    } else {
-        return newTaskText;
     }
 
     taskTextElement.textContent = newTaskText;
+}
+
+function deleteTask(task) {
+    taskList.removeChild(task);
 }
