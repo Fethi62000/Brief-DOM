@@ -6,8 +6,6 @@ function addTask() {
 
     if (taskText === "") {
         return;
-    } else {
-        return taskText;
     }
 
     let li = document.createElement('li')
@@ -20,10 +18,38 @@ function addTask() {
     editButton.innerHTML = '<ion-icon name="pencil-outline"></ion-icon>'
 
     editButtononclick = function () {
-    editTask(li)
+        editTask(li)
     }
+
+    let deleteButton = document.createElement('button');
+    deleteButton.innerHTML = '<ion-icon name="trash-outline"></ion-icon>'
+
+
+    deleteButton.onclick = function () {
+        deleteTask(li)
+
+    }
+
+    li.appendChild(editButton);
+    li.appendChild(deleteButton);
+
+
+    taskList.appendChild(li);
+    taskInput.value = "";
 
 
 }
+function editTask() {
+    let taskElement = task.firstChild;
+    let taskText = taskTextElement.textContent;
 
+    let newTaskText = prompt("Modifier la tâche", taskText);
 
+    if (newTaskText === null || newTaskText === "") {
+        return;
+    } else {
+        return newTaskText;
+    }
+
+    taskTextElement.textContent = newTaskText;
+}
