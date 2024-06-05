@@ -8,7 +8,7 @@ function addTask() {
         return;
     }
 
-    let li = document.createElement('li')
+    let li = document.createElement('li');
 
     li.innerHTML = taskText;
 
@@ -32,6 +32,7 @@ function addTask() {
 
     li.appendChild(editButton);
     li.appendChild(deleteButton);
+
 
 
     taskList.appendChild(li);
